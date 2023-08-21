@@ -17,8 +17,8 @@ int main(void)
 	printf("Character:[%c]\n", 'H');
 	_printf("Character:[%c]\n", 'H');
 
-	len = printf("String:[%s]\n", NULL);
-	len1 = _printf("String:[%s]\n", NULL);
+	printf("String:[%s]\n", NULL);
+	_printf("String:[%s]\n", NULL);
 
 	printf("Percent:[%%]\n");
 	_printf("Percent:[%%]\n");
@@ -31,6 +31,8 @@ int main(void)
 	_printf("");
 	printf("Test[%q]\n");
 	_printf("Test[%q]\n");
+	len = printf("%%");
+	len1 = _printf("%%");
 	printf("len: %d\nlen1: %d\n", len, len1);
 
 	return (0);

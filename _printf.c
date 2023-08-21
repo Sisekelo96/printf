@@ -41,6 +41,8 @@ int _printf(const char *format, ...)
 			count++;
 			i++;
 		}
+		if (format[i] == '\0')
+			break;
 		_putchar(format[i]);
 		count++;
 		i++;
