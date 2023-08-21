@@ -17,11 +17,12 @@ int main(void)
 	printf("Character:[%c]\n", 'H');
 	_printf("Character:[%c]\n", 'H');
 
-	printf("String:[%s]\n", "I am a string !");
-	_printf("String:[%s]\n", "I am a string !");
+	len = printf("String:[%s]\n", NULL);
+	len1 = _printf("String:[%s]\n", NULL);
 
-	len = printf("Percent:[%%]\n");
-	len1 = _printf("Percent:[%%]\n");
+	printf("Percent:[%%]\n");
+	_printf("Percent:[%%]\n");
+
 	printf("len: %d\nlen1: %d\n", len, len1);
 	return (0);
 }

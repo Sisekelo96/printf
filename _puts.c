@@ -4,15 +4,31 @@
  * _puts - prints a string to stdout
  * @string: string to print
  *
- * Return: void
+ * Return: number of character printed
  */
-void _puts(char *string)
+int _puts(char *string)
 {
-	int i = 0;
+	char *null = "(null)";
+	int i = 0, count = 0;
 
-	while (string[i] != 0)
+	if (string == NULL)
 	{
-		_putchar(string[i]);
-		i++;
+
+		while (null[i] != '\0')
+		{
+			_putchar(null[i]);
+			count++;
+			i++;
+		}
 	}
+	else{
+		while (string[i] != '\0')
+		{
+			_putchar(string[i]);
+			count++;
+			i++;
+		}
+	}
+	count--;
+	return (count);
 }
