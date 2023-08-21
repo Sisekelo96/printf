@@ -34,6 +34,7 @@ int _printf(const char *format, ...)
 					break;
 				default:
 					_putchar(format[i - 1]);
+					count++;
 					_putchar(format[i]);
 					break;
 			}

@@ -23,11 +23,15 @@ int main(void)
 	printf("Percent:[%%]\n");
 	_printf("Percent:[%%]\n");
 
-	printf("len: %d\nlen1: %d\n", len, len1);
+	
 	printf("Test[% ]\n");
 	_printf("Test[% ]\n");
 
-	printf("%' ' bs sn");
+	printf("");
+	_printf("");
+	printf("Test[%q]\n");
+	_printf("Test[%q]\n");
+	printf("len: %d\nlen1: %d\n", len, len1);
 
 	return (0);
 }
