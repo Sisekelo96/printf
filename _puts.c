@@ -21,7 +21,8 @@ int _puts(char *string)
 			i++;
 		}
 	}
-	else{
+	else
+	{
 		while (string[i] != '\0')
 		{
 			_putchar(string[i]);
