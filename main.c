@@ -10,29 +10,8 @@
 int main(void)
 {
 	int len, len1;
-
-	printf("Let's try to printf a simple sentence.\n");
-	_printf("let's try to printf a simple sentence.\n");
-
-	printf("Character:[%c]\n", 'H');
-	_printf("Character:[%c]\n", 'H');
-
-	printf("String:[%s]\n", NULL);
-	_printf("String:[%s]\n", NULL);
-
-	printf("Percent:[%%]\n");
-	_printf("Percent:[%%]\n");
-
-	
-	printf("Test[% ]\n");
-	_printf("Test[% ]\n");
-
-	printf("");
-	_printf("");
-	printf("Test[%q]\n");
-	_printf("Test[%q]\n");
-	len = printf("%%");
-	len1 = _printf("%%");
+	len = printf("Test[% ]\n");
+	len1 = _printf("Test[% ]\n");
 	printf("len: %d\nlen1: %d\n", len, len1);
 
 	return (0);
