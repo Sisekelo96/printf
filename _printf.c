@@ -1,4 +1,5 @@
 #include "main.h"
+int _printf(const char *format, ...);
 /**
  * _printf - print text and variable values in a specific format
  * @format: character string
@@ -10,20 +11,15 @@ int _printf(const char *format, ...)
 	char *str;
 	va_list arg;
 
-	va_start(arg, format);
 	if (format == NULL)
 		return (-1);
+	va_start(arg, format);
 	while (format[i] != '\0')
 	{
 		if (format[i] == '%')
 		{
 			i++;
-			if (format[0] == '%' && format[1] == ' ')
-			{
-				va_end(arg);
-				return (-1);
-			}
-			if (format[i] == '\0')
+			if ((format[i] == '\0') || (format[0] == '%' && format[1]  == ' '))
 			{
 				va_end(arg);
 				return (-1);
