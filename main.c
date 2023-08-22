@@ -20,7 +20,8 @@ int main(void)
 	len = printf("Percent:[%%]\n");
 	len1 = _printf("Unknown:[%r]\n");
 	len = printf("Unknown:[%r]\n");
-
+	len = printf("% ");
+	len1 = _printf("% ");
 	printf("Test[% ]\n");
 	_printf("Test[% ]\n");
 	printf("len: %d\nlen1: %d\n", len, len1);
