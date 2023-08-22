@@ -19,7 +19,10 @@ int _printf(const char *format, ...)
 		{
 			i++;
 			if (format[1] == '\0' || format[1] == ' ')
+			{
+				va_end(arg);
 				return (-1);
+			}
 			switch (format[i])
 			{
 				case 'c':
