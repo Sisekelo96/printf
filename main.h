@@ -9,5 +9,5 @@ int _putchar(char c);
 int _puts(char *string);
 void print_integer(int n);
 int _printf(const char *format, ...);
-
+void integer(int number);
 #endif
