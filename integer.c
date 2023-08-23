@@ -13,7 +13,7 @@ void integer(int number)
 	{
 		number = -number;
 	}
-	else if (number >= 10)
+	if (number >= 10)
 	{
 		integer(number / 10);
 	}
