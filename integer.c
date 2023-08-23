@@ -11,6 +11,7 @@ void integer(int number)
 
 	if (number < 0)
 	{
+		_putchar('-');
 		number = -number;
 	}
 	if (number >= 10)
